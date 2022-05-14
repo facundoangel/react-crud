@@ -1,0 +1,37 @@
+.GridProduct {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+  gap: 9px;
+  padding: 9px;
+}
+
+.child {
+  background-color: red;
+  outline: 1px solid rgba(0, 0, 0, 0.521);
+  height: 200px;
+  width: 150px;
+  border-radius: 8px;
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 58%,
+      rgba(0, 0, 0, 0.7707457983193278) 89%
+    ),
+    url("../public/img/lampara.jfif");
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+
+  &:hover {
+    transition: all 0.9s ease;
+    outline-offset: -5px;
+    outline: 2px solid rgba(255, 255, 255, 0.521);
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(0, 0, 0, 0.7707457983193278) 76%
+      ),
+      url("../public/img/lampara.jfif");
+    background-size: cover;
+    background-position: center;
+  }
+}

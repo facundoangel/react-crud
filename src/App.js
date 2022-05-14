@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import React from "react";
+import NavbarComponent from "./NavbarComponent.js";
+import CardForm from "./CardForm";
+import GridProduct from "./GridProduct";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <NavbarComponent />
+
+      <div className="container pt-5">
+        <div className="row">
+          <div className="col-12 col-sm-5 col-md-4 py-3">
+            <CardForm />
+          </div>
+          <div className="col-12 col-sm-7 col-md-8 ps-5">
+            <GridProduct />
+          </div>
+        </div>
+      </div>
+    </>
   );
 }
 
